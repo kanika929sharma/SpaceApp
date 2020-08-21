@@ -11,7 +11,7 @@
     "serve:ssr": "node dist/spaceApp/server/main.js",
     "build:ssr": "ng build --prod && ng run spaceApp:server:production",
     "prerender": "ng run spaceApp:prerender",
-    "start": "node dist/spaceApp/server/main.js"
+    "start": "ng build --prod && node dist/spaceApp/server/main.js"
   },
   "engines": {
     "node": "12.18.3",
