@@ -12,7 +12,6 @@
     "serve:ssr": "node dist/spaceApp/server/main.js",
     "build:ssr": "ng build --prod && ng run spaceApp:server:production",
     "prerender": "ng run spaceApp:prerender",
-    "heroku-postbuild": "ng build --prod",
     "postinstall": "npm run build:ssr",
     "start:heroku": "node dist/server"
   },
