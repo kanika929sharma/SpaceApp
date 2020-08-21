@@ -1,0 +1,13 @@
+<div class="spaceContainer">
+  <h2> Space X Launch Programs </h2>
+  <div class="spaceAppCss">
+    <div class="filterCard">
+      <app-space-launch-filter (spaceLaunchDataEmitter)="onSpaceLaunchDataEmit($event)"></app-space-launch-filter>
+    </div>
+    <div class="filterResultCard" [ngClass]="{'noDataResultAlign': spaceLaunchData.length === 0}">
+      <div *ngIf="spaceLaunchData.length === 0"> No Data to display </div>
+      <app-space-launch-list [spaceLaunchData] = "spaceLaunchData" *ngIf="spaceLaunchData.length > 0"> </app-space-launch-list>
+    </div>    
+  </div>
+  <div class="divFontName"> <span class="nameFont"> Developed By: </span> Kanika Sharma  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="card-deck">
+    <div class = "card  form-col-3" *ngFor = "let launchItem of spaceLaunchData">
+        <div class ="card-body">
+            <div class="imageAlign">
+                <img src={{launchItem.links.mission_patch_small}}> 
+            </div>
+            <div class="infoAlign">
+                <h6 class="nameFont">{{launchItem['mission_name']}} # {{launchItem['flight_number']}} </h6>
+                <h6 class="missionIdFont"> Mission Ids </h6>
+                <ul>
+                    <li *ngFor="let missionid of launchItem.mission_id"> {{missionid}} </li>
+                </ul>
+                <div class="missionIdFont"> Launch Year:  <span> {{launchItem.launch_year}}</span></div>           
+                <div class="missionIdFont"> Sucessful Launch:  <span> {{launchItem.launch_success}} </span> </div>          
+                <div class="missionIdFont"> Successful Landing:  <span> {{launchItem.launch_landing}} </span> </div>     
+            </div>
+            
+        </div>
+    </div>
+</div>

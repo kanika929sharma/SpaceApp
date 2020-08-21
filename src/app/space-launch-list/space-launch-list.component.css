@@ -1,0 +1,140 @@
+.card-deck > .card {
+    /* width: 260px; */
+    flex-wrap: wrap;
+    flex: initial;
+    column-gap: 30px;
+    margin-bottom: 20px;
+}
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    /* display: flex; */
+    width: 262px;
+    border-radius: 10px;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 5px!important;
+}
+
+img {
+    width: 210px;
+    background-color: #eeeff0;
+    height: 180px;
+}
+
+.imageAlign {
+    text-align: center;
+}
+.infoAlign {
+    padding: 12px;
+}
+[class*="form-col"] {
+    flex: 0 1 100%;
+    padding: 0 0;
+}
+
+.nameFont {
+    color: #400080;
+    font-weight: 700;
+}
+
+.missionIdFont {
+    font-weight: 700;
+}
+
+ul {
+    color: #400080;
+    line-height: 1rem;
+}
+
+span {
+    color: #400080;
+    font-weight: 400;
+}
+
+@media(max-device-width: 700px) {
+    .form-col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .card-deck {
+        margin-top: 25px;
+    }
+    img {
+        width: 260px;
+        height: 200px;
+    }
+}
+
+@media(min-device-width: 700px) and (max-device-width: 1023px) {
+    
+    img {
+        width: 185px;
+    }
+    .form-col-3 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .card-deck {
+        margin-right: -50px;
+    }
+    
+}
+
+@media(min-device-width: 1024px) and (max-device-width: 1440px) {
+    .card-deck {
+        margin-right: -80px;
+        margin-left: 20px;
+    }
+    .card-deck > .card {
+        margin-left: 5px;
+    }
+    
+    .form-col-3 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+}
+
+@media(min-device-width: 1024px) and (max-device-width: 1440px) and (orientation: portrait) {
+    .card-deck {
+        margin-right: -30px;
+        margin-left: 0px;
+    }
+    img {
+        width: 125px;
+    }
+
+}
+
+@media(min-device-width: 1024px) and (max-device-width: 1440px) and (orientation: landscape) {
+    .card-deck {
+        margin-right: -80px;
+        margin-left: 20px;
+    }
+    img {
+        width: 140px;
+    }
+}
+
+@media(min-device-width: 1440px) {
+    .form-col-3 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .card-deck {
+        margin-right: -125px;
+        margin-left: 5px;
+    }
+}

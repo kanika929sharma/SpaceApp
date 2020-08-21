@@ -1,0 +1,47 @@
+.btn-primary {
+    border-color: #4c9900;
+    background-color: #4c9900;
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    color: black;
+    align-items: center;
+    opacity: 0.5;
+    padding: 0px;
+    margin: 5px 20px 5px 20px;
+}
+.toggleCssActive {
+    opacity: 1!important;
+}
+.toggleCssInActive {
+    opacity: 0.5!important;
+}
+.headPadding {
+    padding-top: 5px;
+}
+
+@media(max-device-width: 700px) {
+    .centerAlign {
+        transform: translateX(10%)!important;
+    }
+    .btn-primary {        
+        margin: 5px 30px 5px 30px ;
+    }
+}
+
+@media(min-device-width: 700px) and (max-device-width: 1023px) {
+    .centerAlign {
+        transform: translateX(2%)!important;
+    }
+    .btn-primary {        
+        margin: 5px 15px 5px 10px!important ;
+    }
+}
+
+@media(min-device-width: 1024px) and (max-device-width: 1440px) {
+}
+
+@media(min-device-width: 1440px) {    
+}
+
+

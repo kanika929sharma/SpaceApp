@@ -1,0 +1,13 @@
+<h4> Filters </h4>      
+<h6> Launch Year</h6>
+<div class = "centerAlign">
+    <button class="btn btn-primary" [ngClass]="{'toggleCssActive': year.value, 'toggleCssInActive': !year.value}" id=year.key data-toggle="button" *ngFor=" let year of yearValue | keyvalue" (click)="toggleValue(year, 'yearValue', 'selectedYear')"> {{year.key}} </button>
+</div>
+<h6 class="headPadding"> Successful Launch</h6>
+<div class = "centerAlign">
+    <button class="btn btn-primary" [ngClass]="{'toggleCssActive': launchVal.value, 'toggleCssInActive': !launchVal.value}" id=launchVal.key data-toggle="button" *ngFor=" let launchVal of successfulLaunchVal | keyvalue: asIsOrder" (click)="toggleValue(launchVal, 'successfulLaunchVal', 'selectedSuccLaunchVal')"> {{launchVal.key}} </button>
+</div>
+<h6 class="headPadding"> Successful Landing</h6>
+<div class = "centerAlign">
+    <button class="btn btn-primary" [ngClass]="{'toggleCssActive': landVal.value, 'toggleCssInActive': !landVal.value}" id=landVal.key data-toggle="button" *ngFor=" let landVal of successfulLandVal | keyvalue: asIsOrder" (click)="toggleValue(landVal, 'successfulLandVal', 'selectedSuccLandingVal')"> {{landVal.key}} </button>
+</div>
