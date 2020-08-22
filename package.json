@@ -3,15 +3,15 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run spaceApp:serve-ssr",
     "serve:ssr": "node dist/spaceApp/server/main.js",
-    "build:ssr": "ng lint && ng build --prod && ng run spaceApp:server:production",
-    "prerender": "ng run spaceApp:prerender",
-    "start": "ng build --prod && node dist/spaceApp/server/main.js"
+    "build:ssr": "ng build --prod && ng run spaceApp:server:production",
+    "prerender": "ng run spaceApp:prerender"
   },
   "engines": {
     "node": "12.18.3",
