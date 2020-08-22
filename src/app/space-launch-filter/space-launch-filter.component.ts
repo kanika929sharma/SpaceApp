@@ -64,7 +64,6 @@ export class SpaceLaunchFilterComponent implements OnInit, OnDestroy {
     if (this.selectedYear) {
       qString += 'launch_year=' + this.selectedYear + '&';
     }
-    console.log('qstring', qString.substring(0, qString.length - 1));
     return qString.substring(0, qString.length - 1);
   }
 
